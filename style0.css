@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #3a3a3a;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #494949;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1rem;
+    display: flex;
+    top: 0;
+    padding: 5px;
+    align-items: center;
+    height: 50px;
+}
+header h1 {
+    font-size: 24px;
+    margin-left: 20px;
+}
+.home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 120px;
+    margin-right: 30px;
+    margin-left: 20px;
+    animation: 4s ease-in-out infinite 1s;
+    animation-name: morph;
+}
+@keyframes morph{
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+.text-box{
+    color: white;
+}
+.main-text h1{
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.text{
+    color: #b8b8b8;
+    font-size: 14px;
+    font-weight: 600;
+}
+.logo-box ul{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+.logo-box ul li img{
+    width: 30px;
+    height: 30px;
+}
+#sidebar{
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #3a3a3a;
+    transition: all 500ms cubic-bezier(1, 0, 0, 1);
+    padding: 1rem;
+    line-height: 1.75;
+    z-index:1000;
+
+}
+#sidebar p{
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #e0e0e0;
+}
+#sidebar.open{
+    right:-100px;
+}
+.selected{
+    color: #e0e0e0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#sidebar #trigger{ 
+    position: absolute;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    left: -48px;
+}
+a:hover{
+color: #e0e0e0;
+}
+.icon{
+    font-size: 40px 40px 40px 40px;
+}

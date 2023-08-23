@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #3a3a3a;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #494949;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1rem;
+    display: flex;
+    top: 0;
+    padding: 5px;
+    align-items: center;
+    height: 50px;
+}
+header h1 {
+    font-size: 24px;
+    margin-left: 20px;
+}
+.news-container{
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: #3a3a3a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.news-item{
+    border: 1px solid #2c2c2c;
+    width: 100px;
+    height: 40px;
+    color: rgb(175, 175, 175);
+    background-color: #2c2c2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.main-text{
+    font-weight: 1000;
+    color: white;
+    margin-bottom: 60px;
+}
+.news-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    margin-bottom: 20px;
+    width: 700px;
+}
+img{
+    width: 100%;
+}
+.news-date{
+    color: #a7a7a7;
+    margin-bottom: 20px;
+    align-self: flex-end;
+    margin-right: 80px;
+}
+.line{
+    border: 0.5px solid #494949;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.news-header{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 700px;
+}
+.list{
+    list-style: none;
+    color: #fff;
+}
+.news-text{
+    margin-bottom: 20px;
+}
+.news-text.selected .content{
+    display: none;
+}
+.click-box{
+    margin-bottom: 30px;
+    
+}
+#sidebar{
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #3a3a3a;
+    transition: all 500ms cubic-bezier(1, 0, 0, 1);
+    padding: 1rem;
+    line-height: 1.75;
+    z-index:1000;
+}
+#sidebar p{
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #e0e0e0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.selected{
+    color: #e0e0e0;
+}
+#sidebar.open{
+    right:-100px;
+}
+#sidebar #trigger{ 
+    position: absolute;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    left: -48px;
+    /* border: 0; */
+}
